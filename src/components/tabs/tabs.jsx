@@ -35,7 +35,9 @@ const Tabs = ({ activeTab, setActiveTab }) => {
         if (selectedWeek) {
             const updatedWeekRecipes = {
                 ...weekRecipes,
-                [selectedWeek]: [...weekRecipes[selectedWeek], ...selectedRecipes]
+                [selectedWeek]: [
+                    ...new Set([...weekRecipes[selectedWeek], ...selectedRecipes])
+                ]
             };
 
             setWeekRecipes(updatedWeekRecipes);
@@ -122,7 +124,7 @@ const Tabs = ({ activeTab, setActiveTab }) => {
                     <Recipes onRecipeSelect={handleRecipeSelect} selectedRecipes={selectedRecipes} />
                 ) : (
                     weekRecipes[activeTab].length === 0 ? (
-                        <p></p>
+                        <p>No recipes added to this week yet.</p>
                     ) : (
                         weekRecipes[activeTab].map(recipeId => (
                             <RecipeCard 
