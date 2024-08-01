@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: Poppins;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+html{
+  background-image: linear-gradient(45deg, #FAF3ED, #F9E9F8, #E6F1F9);
+}
+
+
+.recipes-list {
+  display: flex;
+  /* margin-left: 15%; */
+}
+
+.recipe-card {
+  transform: translateY(-5px);
+  aspect-ratio: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+.recipes-list {
+  display: flex;
+  /* margin-left: 15%; */
+  background-image: linear-gradient(45deg, #FAF3ED, #F9E9F8, #E6F1F9);
+}
+
+.modal-title.h4 {
+  margin-left: 33%;
+}
+
+/* Modal button styling */
+.modal-week-button {
+  background-color: #f8f9fa; /* Default background color */
+  border: 1px solid #dee2e6; /* Default border color */
+  color: #212529; /* Default text color */
+  margin: 0.5rem 0; /* Spacing between buttons */
+  font-size: 1rem; /* Font size */
+  font-weight: 500; /* Font weight */
+  border-radius: 0.375rem; /* Rounded corners */
+  padding: 0.75rem; /* Padding inside the button */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+/* Modal button active state */
+.modal-week-button.selected {
+  background-color: black; /* Background color when selected */
+  color: white; /* Text color when selected */
+  border-color: black; /* Border color when selected */
+}
+
+/* Optional: Button hover effect */
+.modal-week-button:hover {
+  background-color: #e9ecef; /* Light background on hover */
+}
+
+
+/* Ensure the buttons in the modal are full-width */
+.modal-week-button {
+  width: 100%;
+  text-align: center;
+}
+
+/* Style for the selected button */
+.modal-week-button.selected {
+  background-color: black;
+  color: white;
+}
+
+/* Style for the default button state */
+.modal-week-button {
+  background-color: transparent;
+  color: black;
+}
+
+.recipies.col-lg-12.col-sm-12 {
+  background-image: linear-gradient(45deg, #FAF3ED, #F9E9F8, #E6F1F9);
+  height: auto;
+  display: none;
+}
+
+
+.recipe-card {
+  transform: translateY(-5px);
+  aspect-ratio: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 21px;
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: var(--bs-modal-padding);
+  display: flex;
+}
+
+
+.modal-footer {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap)* .5);
+  background-color: var(--bs-modal-footer-bg);
+  border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
+  border-bottom-right-radius: var(--bs-modal-inner-border-radius);
+  border-bottom-left-radius: var(--bs-modal-inner-border-radius);
+}
+
+
+button.btn.btn-secondary {
+  width: 36%;
+  background: darkgray;
+  color: white;
+}
+
+.recipes-list {
+  display: flex;
+  /* margin-left: 15%; */
+  background-image: linear-gradient(45deg, #FAF3ED, #F9E9F8, #E6F1F9);
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 480px) {
+  .weeks-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: var(--bs-modal-padding);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-footer {
+    justify-content: center;
+}
+}

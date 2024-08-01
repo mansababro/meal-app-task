@@ -1,0 +1,30 @@
+.header.col-lg-12.col-sm-12 {
+    padding: 0;
+    margin: 0;   
+}
+
+.tabs.col-lg-12.col-sm-12 {
+    padding: 0;
+    margin: 0;   
+}
+
+
+.heading.col-lg-12.col-sm-12 {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(45deg, #FAF3ED, #F9E9F8, #E6F1F9);
+
+}
+
+h3.Headingh3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.recipies.col-lg-12.col-sm-12 {
+    background-image: linear-gradient(45deg, #FAF3ED, #F9E9F8, #E6F1F9);
+    height: auto;
+}
+
